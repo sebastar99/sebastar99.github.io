@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+body{
+    background-color: hsl(33, 38%, 80%); 
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    }
+    
+.attribution a { color: hsl(228, 45%, 44%); }
+    
+.centrar{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    text-align: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.movimiento {
+    background-color: white;
+    display: flex;
+    text-align: center; 
+    justify-content: center; 
+    border-radius: 20px;
+}
+.texto{
+    width: 250px;
+}
+
+.boton{
+    background-color: hsl(158, 36%, 37%);
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    width: 180px;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.boton:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+   
+.perfume{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.parfum{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: fit-content;
+}
+
+.floral{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+}
+
+.precio{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: hsl(158, 36%, 37%) ;
+    font-size: 30px;
+}
+
+.texto1{
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+.imgmobile{
+   position: absolute;
+   visibility: hidden;
+}
+
+
+/*Vista Mobile*/
+@media  (max-width: 1440px){
+ .img{
+    position: absolute;
+    visibility: hidden;
+    width: 0px;
+ }
+
+ .imgmobile{
+    position: relative;
+    visibility: initial;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-width: 100%;
+ }
+.movimiento{
+    display: inline-table; /*Cambio la posicion para abajo*/
+    padding-bottom: 70px;
+}
+.texto{
+    width: 100%;
+}
+.boton{
+    background-color: hsl(158, 36%, 37%);
+    position: absolute;
+    top: 125%;
+    left: 20%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    width: 180px;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+.centrar{
+    max-width: 82vw;
+    top: 80px;
+    bottom: auto;
+}
+}
